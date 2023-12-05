@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch src/file -e xml --exec node src/formatFile.js"
+    "dev": "nodemon --watch src/file -e xml --exec node src/formatFile.js",
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
     "jsdom": "^22.1.0",

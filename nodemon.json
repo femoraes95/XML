@@ -1,6 +1,6 @@
 {
     "ignore": [
-      "src/files-formatado/*"
+      "src/files-format/*"
     ]
   }
   

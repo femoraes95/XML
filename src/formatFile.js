@@ -11,7 +11,7 @@ const xmlBuilder = new xml2js.Builder({
 
 async function readAndWriteFiles() {
   const dirPath = "./src/file";
-  const ditPathEdit = "./src/files-formatado";
+  const dirPathEdit = "./src/files-format";
   const files = fs.readdirSync(dirPath);
 
   for (let file of files) {
@@ -30,7 +30,7 @@ async function readAndWriteFiles() {
 
     let xml = xmlBuilder.buildObject(prefixedJsonObj);
     fs.writeFileSync(
-      path.join(ditPathEdit, `${path.parse(file).name}-formatado.xml`),
+      path.join(dirPathEdit, `${path.parse(file).name}-formatado.xml`),
       xml
     );
     // Após o processamento, deletar o arquivo original
